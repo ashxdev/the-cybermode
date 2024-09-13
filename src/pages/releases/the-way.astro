@@ -3,6 +3,9 @@ import Layout from '../../layouts/Layout.astro'
 
 import { Image } from 'astro:assets'
 import singleCover from '../../assets/img/cybermode-theway.png'
+import logo from '/public/logo.png'
+import icon from '/public/icon.png'
+
 ---
 
 <Layout title="Сінгл Шлях">
@@ -12,22 +15,16 @@ import singleCover from '../../assets/img/cybermode-theway.png'
       class="bg-white px-4 py-3 flex items-center justify-between dark:bg-neutral-900 dark:text-white"
     >
       <a class="flex items-center gap-2" href="#">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="w-6 h-6"
-        >
-          <circle cx="8" cy="18" r="4"></circle>
-          <path d="M12 18V2l7 4"></path>
-        </svg>
-        <span class="text-lg font-semibold">Cybermode</span>
+        <Image
+        src={icon}
+        class=" w-20"
+        alt="Album Cover"
+      />
+        <Image
+        src={logo}
+        class=" w-60 "
+        alt="Album Cover"
+      />
       </a>
       <nav class="flex items-center gap-4">
         <a class="text-muted-foreground hover:underline dark:text-white" href="/">Home </a>
