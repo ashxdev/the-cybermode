@@ -6,5 +6,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://ashxdev.github.io',
-  base: 'the-last-of-mars',
+  base: 'the-cybermode',
 });
