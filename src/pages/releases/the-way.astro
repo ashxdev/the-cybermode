@@ -3,35 +3,12 @@ import Layout from '../../layouts/Layout.astro'
 
 import { Image } from 'astro:assets'
 import singleCover from '../../assets/img/cybermode-theway.png'
-import logo from '/public/logo.png'
-import icon from '/public/icon.png'
-
+import Header from '@components/Header.astro'
 ---
 
 <Layout title="Сінгл Шлях">
-
   <div class="flex flex-col min-h-[100dvh] dark:bg-muted dark:text-muted-foreground">
-    <header
-     class="bg-white px-4 py-3 sm:flex items-center justify-between dark:bg-neutral-900 dark:text-white"
-    >
-      <a class="flex items-center gap-2" href="#">
-        <Image
-        src={icon}
-        class=" w-20"
-        alt="Album Cover"
-      />
-        <Image
-        src={logo}
-        class=" w-60 "
-        alt="Album Cover"
-      />
-      </a>
-      <nav class="flex items-center gap-4">
-        <a class="text-muted-foreground hover:underline dark:text-white" href="/">Home </a>
-        <a class="text-muted-foreground hover:underline dark:text-white" href="#">Library </a>
-        <a class="text-muted-foreground hover:underline dark:text-white" href="#">Radio </a>
-      </nav>
-    </header>
+    <Header />
     <div
       class="flex flex-col items-center justify-center flex-1 bg-background px-4 py-12 sm:px-6 lg:px-8 dark:bg-muted"
     >
@@ -59,13 +36,53 @@ import icon from '/public/icon.png'
                 Listen
               </a>
               <div class="flex items-center gap-4">
-                <a class="text-muted-foreground hover:underline" target="_blank" href="https://www.youtube.com/watch?v=uJzkCZW-0gU">
-                  <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" /><path d="M10 9l5 3l-5 3z" /></svg>
+                <a
+                  class="text-muted-foreground hover:underline"
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=uJzkCZW-0gU"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube"
+                    ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                      d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z"
+                    ></path><path d="M10 9l5 3l-5 3z"></path></svg
+                  >
                 </a>
-                <a class="text-muted-foreground hover:underline" target="_blank" href="https://www.tiktok.com/@thecybermode">
-                  <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg>
+                <a
+                  class="text-muted-foreground hover:underline"
+                  target="_blank"
+                  href="https://www.tiktok.com/@thecybermode"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"
+                    ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                      d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z"
+                    ></path></svg
+                  >
                 </a>
-                <a class="text-muted-foreground hover:underline dark:text-white" target="_blank" href="https://www.facebook.com/thecybermode/">
+                <a
+                  class="text-muted-foreground hover:underline dark:text-white"
+                  target="_blank"
+                  href="https://www.facebook.com/thecybermode/"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -82,7 +99,11 @@ import icon from '/public/icon.png'
                     ></path>
                   </svg>
                 </a>
-                <a class="text-muted-foreground hover:underline dark:text-white" target="_blank" href="https://www.instagram.com/thecybermode?igsh=MTNrMG94YzQ3cnoxbg%3D%3D&utm_source=qr">
+                <a
+                  class="text-muted-foreground hover:underline dark:text-white"
+                  target="_blank"
+                  href="https://www.instagram.com/thecybermode?igsh=MTNrMG94YzQ3cnoxbg%3D%3D&utm_source=qr"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -100,10 +121,28 @@ import icon from '/public/icon.png'
                     <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
                   </svg>
                 </a>
-                <a class="text-muted-foreground hover:underline dark:text-white" target="_blank" href="https://x.com/thecybermode">
-                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
+                <a
+                  class="text-muted-foreground hover:underline dark:text-white"
+                  target="_blank"
+                  href="https://x.com/thecybermode"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"
+                    ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                      d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path
+                      d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg
+                  >
                 </a>
-               </div>
+              </div>
             </div>
           </div>
         </div>

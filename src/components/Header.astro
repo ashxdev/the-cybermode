@@ -1,0 +1,19 @@
+---
+import { Image } from 'astro:assets'
+import icon from '/public/icon.png'
+import logo from '/public/logo.png'
+---
+
+<header
+  class="bg-white px-4 py-3 sm:flex items-center justify-between dark:bg-neutral-900 dark:text-white"
+>
+  <a class="flex items-center" href="#">
+    <Image src={icon} class="w-20" alt="Album Cover" />
+    <Image src={logo} class="w-60" alt="Album Cover" />
+  </a>
+  <nav class="flex items-center gap-4">
+    <a class="text-muted-foreground hover:underline dark:text-white" href="/">Home </a>
+    <a class="text-muted-foreground hover:underline dark:text-white" href="#">Library </a>
+    <a class="text-muted-foreground hover:underline dark:text-white" href="#">Radio </a>
+  </nav>
+</header>
