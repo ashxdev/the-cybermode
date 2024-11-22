@@ -1,13 +1,14 @@
 ---
+import Layout from '../../layouts/Layout.astro'
+
 import { Image } from 'astro:assets'
-import Layout from '@layouts/Layout.astro'
 import Header from '@components/Header.astro'
 import Footer from '@components/Footer.astro'
 import SocialLinks from '@components/SocialLinks.astro'
-import singleCover from '@assets/img/cybermode-theway.png'
+import singleCover from '../../assets/img/cybermode-you-and-me.jpg'
 ---
 
-<Layout title="Сінгл Шлях">
+<Layout title="Сінгл Ти і Я">
   <div class="flex flex-col min-h-[100dvh] dark:bg-muted dark:text-muted-foreground">
     <Header />
     <div
@@ -15,28 +16,28 @@ import singleCover from '@assets/img/cybermode-theway.png'
     >
       <div class="w-full max-w-xl">
         <div
-          class="rounded border bg-white text-card-foreground shadow-sm dark:bg-neutral-900 dark:text-white"
+          class="rounded-lg border bg-white text-card-foreground shadow-sm dark:bg-neutral-900 dark:text-white"
           data-v0-t="card"
         >
           <div class="p-6">
             <div class="flex flex-col items-center space-y-4">
               <Image
                 src={singleCover}
-                class="rounded shadow-lg w-fit h-[300px] sm:h-[400px] object-cover"
+                class="rounded-lg shadow-lg w-fit h-[300px] sm:h-[400px] object-cover"
                 alt="Album Cover"
                 style="aspect-ratio: 300 / 300; object-fit: cover;"
               />
               <div class="space-y-2 text-center">
-                <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Шлях</h2>
+                <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Ти і Я</h2>
                 <p class="text-muted-foreground dark:text-muted-foreground">The Cybermode</p>
               </div>
               <a
-                href="https://www.youtube.com/watch?v=uJzkCZW-0gU"
+                href="https://www.youtube.com/watch?v=vFeT4Jw1bVg"
                 class="inline-flex items-center justify-center rounded-md bg-rose-600 px-6 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-rose-600/90 focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 dark:bg-rose-600 dark:text-white"
               >
                 Listen
               </a>
-              <SocialLinks youtubeHref="https://www.youtube.com/watch?v=uJzkCZW-0gU" />
+              <SocialLinks youtubeHref="https://www.youtube.com/watch?v=vFeT4Jw1bVg" />
             </div>
           </div>
         </div>
